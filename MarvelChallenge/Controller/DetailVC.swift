@@ -79,12 +79,9 @@ class DetailVC: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         let currentDate = formatter.string(from: date)
-        
         let since2005Date = "2005-01-01"
         
         return  "\(since2005Date),\(currentDate)"
-        
-        
     }
     @IBAction func favoriteButtonClicked(_ sender: UIButton) {
         
@@ -160,7 +157,7 @@ extension DetailVC: ApiServiceDelegate {
                 
                 
                 addAnimation()
-                comics.text = (comics.text ?? "") + (result.comicTitle ?? "")
+                comics.text = (comics.text ?? "") + "\n" + (result.comicTitle ?? "")
                 
             }
             

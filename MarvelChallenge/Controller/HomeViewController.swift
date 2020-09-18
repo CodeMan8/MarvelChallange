@@ -200,7 +200,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         
-        return CGSize(width: self.collectionViewCharacters.frame.size.width/5 - 7, height: collectionViewCharacters.frame.size.height/3)
+        return CGSize(width: self.collectionViewCharacters.frame.size.width/3 - 7, height: collectionViewCharacters.frame.size.height/5)
         
     }
     
@@ -218,7 +218,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 3, bottom: 0, right: 3)
         
     }
     

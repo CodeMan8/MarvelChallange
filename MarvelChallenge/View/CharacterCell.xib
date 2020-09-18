@@ -19,7 +19,8 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AeP-ib-x80">
                         <rect key="frame" x="0.0" y="-1" width="229" height="170"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="170" id="en5-MD-j9h"/>
+                            <constraint firstAttribute="width" constant="229" id="ArA-Zi-rKQ"/>
+                            <constraint firstAttribute="height" constant="170" id="dUk-J7-YWK"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -27,10 +28,10 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cob-g6-5dA">
-                        <rect key="frame" x="5" y="170" width="35.5" height="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="cob-g6-5dA">
+                        <rect key="frame" x="5" y="170" width="120" height="17"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="25" id="fKs-JB-aTC"/>
+                            <constraint firstAttribute="width" constant="120" id="tAP-t9-r6j"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -40,7 +41,6 @@
             </view>
             <constraints>
                 <constraint firstItem="AeP-ib-x80" firstAttribute="centerX" secondItem="NSp-iK-eyQ" secondAttribute="centerX" id="1Nz-bI-Lg8"/>
-                <constraint firstItem="AeP-ib-x80" firstAttribute="width" secondItem="lgh-zi-QJD" secondAttribute="width" id="D74-v5-pjp"/>
                 <constraint firstItem="cob-g6-5dA" firstAttribute="top" secondItem="AeP-ib-x80" secondAttribute="bottom" constant="1" id="LqI-3W-AGN"/>
                 <constraint firstItem="NSp-iK-eyQ" firstAttribute="top" secondItem="AeP-ib-x80" secondAttribute="top" constant="45" id="OZE-av-kJq"/>
                 <constraint firstItem="cob-g6-5dA" firstAttribute="leading" secondItem="NSp-iK-eyQ" secondAttribute="leading" constant="5" id="wK9-5C-TE5"/>

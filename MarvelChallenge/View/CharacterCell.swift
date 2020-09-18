@@ -16,17 +16,21 @@ class CharacterCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        addShadow()
+       
+    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        imageView.image = nil
+    }
+    func addShadow() {
         self.layer.cornerRadius  = 5.0
         self.layer.masksToBounds = true
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.23
         self.layer.shadowRadius = 4
-    }
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        imageView.image = nil
     }
     func imageLoading(url: String) {
         self.imageView.setImage(with: url)
@@ -35,9 +39,7 @@ class CharacterCell: UICollectionViewCell {
     func updateUI(cell: Character) {
         nameLabel.text =   cell.name
         imageLoading(url: cell.imageUrl)
-        
-        //  descriptionDetailLabel.text = "\(cell.proCount) near you"
-        
+                
         
     }
     

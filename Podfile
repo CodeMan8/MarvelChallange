@@ -8,6 +8,8 @@ target 'MarvelChallenge' do
   # Pods for MarvelChallenge
 	pod 'Kingfisher'
 	pod 'AlamofireObjectMapper', '~> 5.2'
+	pod 'Firebase/Analytics'
+
 
   target 'MarvelChallengeTests' do
     inherit! :search_paths

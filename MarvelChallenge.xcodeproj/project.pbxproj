@@ -13,6 +13,9 @@
 		CE51FC3F2513A2A50020ED0E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FC3E2513A2A50020ED0E /* Character.swift */; };
 		CE51FC412513A4920020ED0E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FC402513A4920020ED0E /* DetailVC.swift */; };
 		CE51FC432513D39F0020ED0E /* CharacterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FC422513D39F0020ED0E /* CharacterObject.swift */; };
+		CE51FC452514A6640020ED0E /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FC442514A6640020ED0E /* Comic.swift */; };
+		CE51FC4A251508B90020ED0E /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51FC49251508B90020ED0E /* AnalyticsManager.swift */; };
+		CE51FC4C25150B780020ED0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE51FC4B25150B780020ED0E /* GoogleService-Info.plist */; };
 		CEA65AFD251397E7003E036C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA65AFC251397E7003E036C /* AppDelegate.swift */; };
 		CEA65AFF251397E7003E036C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA65AFE251397E7003E036C /* SceneDelegate.swift */; };
 		CEA65B01251397E7003E036C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA65B00251397E7003E036C /* HomeViewController.swift */; };
@@ -56,6 +59,9 @@
 		CE51FC3E2513A2A50020ED0E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CE51FC402513A4920020ED0E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CE51FC422513D39F0020ED0E /* CharacterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObject.swift; sourceTree = "<group>"; };
+		CE51FC442514A6640020ED0E /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		CE51FC49251508B90020ED0E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		CE51FC4B25150B780020ED0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEA65AF9251397E7003E036C /* MarvelChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA65AFC251397E7003E036C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA65AFE251397E7003E036C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,14 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		CE51FC48251508A90020ED0E /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				CE51FC49251508B90020ED0E /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		CEA65AF0251397E6003E036C = {
 			isa = PBXGroup;
 			children = (
@@ -151,16 +165,18 @@
 		CEA65AFB251397E7003E036C /* MarvelChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				CE51FC3C2513A21E0020ED0E /* Constants.swift */,
+				CE51FC48251508A90020ED0E /* Analytics */,
 				CE51FC3925139F7E0020ED0E /* ApiService */,
 				CEA65B3225139B96003E036C /* Controller */,
 				CEA65B3125139B91003E036C /* View */,
 				CEA65B3025139B8C003E036C /* Model */,
 				CEA65AFC251397E7003E036C /* AppDelegate.swift */,
+				CE51FC3C2513A21E0020ED0E /* Constants.swift */,
 				CEA65AFE251397E7003E036C /* SceneDelegate.swift */,
 				CEA65B02251397E7003E036C /* Main.storyboard */,
 				CEA65B05251397ED003E036C /* Assets.xcassets */,
 				CEA65B07251397ED003E036C /* LaunchScreen.storyboard */,
+				CE51FC4B25150B780020ED0E /* GoogleService-Info.plist */,
 				CEA65B0A251397ED003E036C /* Info.plist */,
 			);
 			path = MarvelChallenge;
@@ -188,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				CE51FC3E2513A2A50020ED0E /* Character.swift */,
+				CE51FC442514A6640020ED0E /* Comic.swift */,
 				CE51FC422513D39F0020ED0E /* CharacterObject.swift */,
 			);
 			path = Model;
@@ -332,6 +349,7 @@
 			files = (
 				CEA65B09251397ED003E036C /* LaunchScreen.storyboard in Resources */,
 				CEA65B06251397ED003E036C /* Assets.xcassets in Resources */,
+				CE51FC4C25150B780020ED0E /* GoogleService-Info.plist in Resources */,
 				CEA65B04251397E7003E036C /* Main.storyboard in Resources */,
 				CEA65B2F25139B88003E036C /* CharacterCell.xib in Resources */,
 			);
@@ -468,6 +486,8 @@
 				CE51FC432513D39F0020ED0E /* CharacterObject.swift in Sources */,
 				CEA65AFD251397E7003E036C /* AppDelegate.swift in Sources */,
 				CEA65AFF251397E7003E036C /* SceneDelegate.swift in Sources */,
+				CE51FC452514A6640020ED0E /* Comic.swift in Sources */,
+				CE51FC4A251508B90020ED0E /* AnalyticsManager.swift in Sources */,
 				CEA65B2E25139B88003E036C /* CharacterCell.swift in Sources */,
 				CE51FC3D2513A21E0020ED0E /* Constants.swift in Sources */,
 			);

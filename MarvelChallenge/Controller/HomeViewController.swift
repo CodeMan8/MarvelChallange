@@ -22,13 +22,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.isHidden = true
-        ApiService.delegate = self
         collectionViewInıt()
         apiStart()
         AnalyticsManager.Instance.sendEventsForAllAnalytics(eventName: "HomeViewController_screen_worked", parameter: nil)
-        
         NSLog("HomeViewController_screen_worked")
     }
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(true)
+          self.navigationController?.navigationBar.isHidden = true
+            ApiService.delegate = self
+
+          
+          
+      }
     
     func getRequestAPICall()  {
         let params = ["ts" : "1","hash": "c698c665b792dab6a766465f579d640d"]
@@ -43,12 +49,7 @@ class HomeViewController: UIViewController {
     }
     
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.navigationController?.navigationBar.isHidden = true
-        
-        
-    }
+  
     func  apiStart(){
         ApiService.getCharacters()
         

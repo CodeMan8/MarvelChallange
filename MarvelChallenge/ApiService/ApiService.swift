@@ -44,7 +44,11 @@ class ApiService {
         
     }
     static  func getNextCharacters(nextValue: Int) {
-        // this function will be used with offsetValue
+        /*
+                 this function will be used with offsetValue
+                - offset: skips the initial specified number of data
+                - hash: Its a combination encrypted data of public and private key 
+        */
         
         let LAST_URL = Constants.API + Constants.characters + Constants.apiKey
         let params = ["offset": nextValue,"limit": 30,"ts" : 1,"hash": "c698c665b792dab6a766465f579d640d"] as [String : Any]
@@ -68,7 +72,12 @@ class ApiService {
     }
     
     static  func getComicsDetail(withCharacterId: Int,sendingDate: String) {
-        // this function will be used with offsetValue
+        /*
+         this function takes two extra parameters : dataRange and orderBy
+         - dateRange: 2015 - now(current date) : fetch data in the specified range
+         - orderBy: -onSaleDate : sort data by date of publish(sale)
+         */
+    
         
         let LAST_URL = Constants.API + Constants.characters + "/\(withCharacterId)" +  Constants.comics  + Constants.apiKey
         let params = ["dateRange": sendingDate, "orderBy": "-onsaleDate","limit": 10,"ts" : 1,"hash": "c698c665b792dab6a766465f579d640d"] as [String : Any]

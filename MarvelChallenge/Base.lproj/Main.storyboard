@@ -104,7 +104,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="358.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Uir-b4-chJ" userLabel="description">
-                                <rect key="frame" x="15" y="262.5" width="350" height="21.5"/>
+                                <rect key="frame" x="15" y="277.5" width="350" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="nWR-oI-mED"/>
                                 </constraints>
@@ -113,12 +113,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-GG-GxJ" userLabel="name">
-                                <rect key="frame" x="15" y="220.5" width="289" height="30"/>
+                                <rect key="frame" x="15" y="232" width="370" height="33.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="289" id="ajh-LP-BOH"/>
+                                    <constraint firstAttribute="width" constant="370" id="ajh-LP-BOH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-Vx-DP6">
@@ -148,7 +148,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Uir-b4-chJ" firstAttribute="centerY" secondItem="w27-pu-2cu" secondAttribute="centerY" constant="50" id="0Ci-ST-KcS"/>
+                            <constraint firstItem="Uir-b4-chJ" firstAttribute="centerY" secondItem="w27-pu-2cu" secondAttribute="centerY" constant="65" id="0Ci-ST-KcS"/>
                             <constraint firstItem="gI5-Vx-DP6" firstAttribute="leading" secondItem="Uir-b4-chJ" secondAttribute="leading" id="6By-Wp-eVz"/>
                             <constraint firstItem="Uir-b4-chJ" firstAttribute="top" secondItem="vi9-GG-GxJ" secondAttribute="bottom" constant="12" id="7l0-qr-cAN"/>
                             <constraint firstItem="w27-pu-2cu" firstAttribute="top" secondItem="83m-Ou-BGg" secondAttribute="bottom" constant="-45" id="AYL-gw-5Ia"/>

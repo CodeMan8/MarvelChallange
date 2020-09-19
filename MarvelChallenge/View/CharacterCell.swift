@@ -25,6 +25,12 @@ class CharacterCell: UICollectionViewCell {
         imageView.image = nil
     }
     func addShadow() {
+        /*
+        - shadowColor sets the color of the shadow, and needs to be a CGColor.
+        - shadowOpacity sets how transparent the shadow is, where 0 is invisible and 1 is as strong as possible.
+        - shadowOffset sets how far away from the view the shadow should be, to give a 3D offset effect.
+        - shadowRadius sets how wide the shadow should be.
+         */
         self.layer.cornerRadius  = 5.0
         self.layer.masksToBounds = true
         self.layer.shadowOffset = CGSize(width: 0, height: 0)

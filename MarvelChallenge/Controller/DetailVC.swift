@@ -22,8 +22,8 @@ class DetailVC: UIViewController {
             updateView()
         }
     }
-    
     var comics: [String?] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ApiService.delegate = self
@@ -122,7 +122,9 @@ class DetailVC: UIViewController {
         
         
     }
-    func addAnimation(){
+    func addAnimation() {
+       //  scaleX and scaleY animation
+        
         UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveLinear, animations: {
             self.comicsLabel.transform = CGAffineTransform(scaleX: 0.5, y: 0.7)
             
@@ -133,15 +135,6 @@ class DetailVC: UIViewController {
         }
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 extension DetailVC: ApiServiceDelegate {
